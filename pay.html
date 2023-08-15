@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated QR Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.qr-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#qrcode {
+    width: 200px;
+    height: 200px;
+}
+
+</style>
+<body>
+    <div class="qr-container">
+        <div id="qrcode"></div>
+    </div>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const qrCodeDiv = document.getElementById("qrcode");
+    const qrCode = new QRCode(qrCodeDiv, {
+        text: "https://www.google.com", // Replace this URL with the desired content of your QR code
+        width: 200,
+        height: 200,
+    });
+
+    animateQRCode();
+
+    function animateQRCode() {
+        // Animation using Anime.js
+        anime({
+            targets: qrCodeDiv.querySelectorAll("img"),
+            scale: [0.5, 1.5], // Example animation, you can customize it
+            duration: 1000,
+            loop: true,
+            direction: "alternate",
+            easing: "easeInOutSine",
+        });
+    }
+});
+
+    </script>
+</body>
+</html>

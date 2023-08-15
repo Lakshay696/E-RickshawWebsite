@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://use.fontawesome.com/96bf418d3c.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+        
+        <nav class="navbar navbar-inverse" style="background-color: black; border-radius: 0;margin-bottom: 0; ">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="game.html" style="font-size: 25px; color: aqua; font-weight: bold; 
+                margin-left: 10px; font-family:Arial, Helvetica, sans-serif;">TIER</a>
+              </div>
+              <ul class="nav navbar-nav" style="margin-left: 20px;">
+                <li class="active"><a href="#laksh " style="font-weight: bold;">Book A Ride</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-weight: bold">Company <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#help">Help</a></li>
+                    
+                  </ul>
+              </ul>
+              <ul class="nav navbar-nav navbar-right" style="margin-right: 25px;">
+                <li><a href="signup.html" style="font-weight: bold; "><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="signup.html" style="font-weight: bold;"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
+              </ul>
+            </div>
+          </nav>
+       
+            <!-- Home Section  -->
+            <div class="container" id="main">
+                <a href="game.html"><img src="image\auto-rickshaw.gif" alt="auto-rickshaw"  width="700px" height="600px" style="position: relative; left: -100px;"></a>
+                <!-- <div class="box11"> -->
+                <h1 class="top-right" style="margin-top: 80px; font-size: 50px;
+                 font-weight: bold; font-family:cursive; font-style: italic; color: black;">Travel With Us.</h1>
+
+                <p class="TT">Book & Manage journeys with Thousands of E-rickshaws, Ride, Hail 
+                  With Executive Vehicles - All On A Single Platform... </p>
+                    <a href="#laksh" style="color: black; text-decoration: none;"><button class="btn-hover">Let's Ride</button></a>
+                  </div>    
+                  <!-- </div> -->
+
+
+                  <!-- slider section -->
+                  <section class="imageSlide" id="imageSlide">                 
+                  <div class="content">
+                    <div class="images">
+                      <img src="image/banner-1.jpg" alt="">
+                      <img src="image/banner-3.jpg" alt="">
+                      <img src="image/banner-2.jpg" alt="">
+                      <img src="image/banner-5.jpg" alt="">
+                      <img src="image/banner-4.jpg" alt="">
+                      <img src="image/banner-0.jpg" alt="">
+                
+                    </div>
+                    <div onclick="side_slide(-1)" class="slide left">
+                      <span class="fas fa-angle-left"></span>
+                    </div>
+                    <div onclick="side_slide(1)" class="slide right">
+                      <span class="fas fa-angle-right"></span>
+                    </div>
+                    <div class="btm-sliders">
+                      <span onclick="btm_slide(1)"></span>
+                      <span onclick="btm_slide(2)"></span>
+                      <span onclick="btm_slide(3)"></span>
+                      <span onclick="btm_slide(4)"></span>
+                      <span onclick="btm_slide(5)"></span>
+                      <span onclick="btm_slide(6)"></span>
+                    
+                    </div>
+                  </div>
+              </section>
+
+
+            
+          
+              <!-- ride section  -->
+              <section class="ride" id="laksh">
+                <div class="ridebox">
+                    <div class="ridetier">
+                        <h3>RIDE WITH TIER</h3>
+                          <p>No matter your destination, we’ll get you wherever you need to go !</p>
+                          <ul> 
+                            <i class="icon fa-solid fa-person-walking-luggage"></i>Get a reliable ride in minutes <br>
+                             <i class="icon fa-solid fa-bell"></i>Schedule your ride in advance <br>
+                            <i class="icon fa-solid fa-gift"></i>Earn rewards on every ride 
+                          </ul>
+                          <div class="input-box">
+                            <input type="text" placeholder="Enter Pickup Location" >
+                            <!-- <i class="icon1 fa-solid fa-location-dot "></i> -->
+                        </div>
+            
+            
+                        <div class="input-box">
+                          <input type="text" placeholder="Enter Destination" >
+                          <!-- <i class="icon1 fa-regular fa-face-smile-beam " ></i> -->
+                      </div>
+                      <a href="signup.html"><input type="submit" value="Ride Now" class="btn1 solid" /></a>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+        
+
+            <!-- shyari section  -->
+          <!-- <div class="shayari" id="shayari">
+            
+              <img class="neww" src="image/batery-rickshaw.jpg" alt="Battery-Rickshaw" height="576px" width="1200px">
+              <div class="siyaram">
+              <p class="text">
+                धीरे चलोगे तो बार बार मिलेंगे, तेज चलोगे तो हरिद्वार मिलेंगे
+              </p>
+            </div>
+          </div> -->
+
+
+         <!-- about us section  -->
+         <section class="about-us" id="aboutus">
+          <div class="header11">
+            <h1>About Us </h1>
+          </div>
+        
+          <div class="container11">
+            <!-- Card 1 -->
+            <div class="card11">
+              <img src="image/SanchitAggarwal.jpg" alt="Person 1">
+              <h3>Sanchit Aggarwal</h3>
+              <p>Frontend Developer</p>
+              <p>Sanchit Aggarwal is  2nd year Btech. undergraduate student pursuing his Computer Science and 
+                Engineering course from Punjabi University, Patiala. He aims to use his knowledge and skills to 
+                create a positive impact on society and contribute meaningfully to the world around us.
+              </p>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="card11">
+              <img src="image/LakshayBansal img.png" alt="Person 2">
+              <h3>Lakshay Bansal</h3>
+              <p>Fullstack Developer</p>
+              <p>
+                Lakshay Bansal is 3rd year Btech undergraduate student pursuing Computer Engineering from Thapar
+                University, Patiala. He looks forward for embracing challenges, embracing opportunities, and 
+                growing as future leader in the field of technology. 
+              </p>
+            </div>
+        
+           
+        
+          </div>
+        </section>
+
+          
+
+           <!-- footer section  -->
+          <footer class="footer" id="help">
+            <div class="container">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>Company</h4>
+                  <ul>
+                    <li><a href="#aboutus">about us</a></li>
+                    <li><a href="#laksh">our services</a></li>
+                    <li><a href="privacy.html">privacy policy</a></li>
+                    <li><a href="game.html"> Play Game</a></li>
+                    
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="pay.html">payment options</a></li>
+                  </ul>
+                </div>
+                
+                <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </footer>
+
+
+         
+<script>
+  // Function to handle the image slider
+  function handleSlider() {
+    const images = document.querySelectorAll('.images img');
+    const leftSlide = document.querySelector('.slide.left');
+    const rightSlide = document.querySelector('.slide.right');
+    const bottomSliders = document.querySelectorAll('.btm-sliders span');
+
+    let currentIndex = 0;
+
+    function showImage(index) {
+      images.forEach((image, i) => {
+        if (i === index) {
+          image.style.display = 'block';
+        } else {
+          image.style.display = 'none';
+        }
+      });
+      updateBottomSliders(index);
+    }
+
+    function updateBottomSliders(index) {
+      bottomSliders.forEach((slider, i) => {
+        if (i === index) {
+          slider.style.backgroundColor = 'white';
+        } else {
+          slider.style.backgroundColor = '';
+        }
+      });
+    }
+
+    leftSlide.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    });
+
+    rightSlide.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    });
+
+    bottomSliders.forEach((slider, i) => {
+      slider.addEventListener('click', () => {
+        currentIndex = i;
+        showImage(currentIndex);
+      });
+    });
+
+    showImage(currentIndex);
+  }
+
+  // Call the handleSlider function when the DOM is loaded
+  document.addEventListener('DOMContentLoaded', handleSlider);
+</script>
+
+        </body>
+        </html>            
+                
